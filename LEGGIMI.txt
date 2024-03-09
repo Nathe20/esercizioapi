@@ -1,0 +1,7 @@
+Ho creato l'api utilizzando gli strumenti consigliati ed ho effettuato il deploy con "serverless deploy"
+Purtroppo essendo la mia prima esperienza con questo genere di applicazioni non sono riuscito a far funzionare correttamente l'api.
+Inoltre, in seguito ad un errore locale del mio computer, come regione mi funzionava solo us-west-1.
+In seguito gli url.
+
+  POST - https://i9fo40zev5.execute-api.us-west-1.amazonaws.com/dev/create_user
+  GET - https://i9fo40zev5.execute-api.us-west-1.amazonaws.com/dev/get_user/{userId}
