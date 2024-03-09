@@ -1,0 +1,20 @@
+service: my-service
+provider:
+  name: aws
+  runtime: python3.8
+  stage: dev
+  region: ue-south-1    #regione
+
+functions:      #chiama le funzioni dell'handler.py
+  create_user:
+    handler: handler.create_user
+    events:
+      - http:
+          path: create_user
+          method: post
+  get_user:
+    handler: handler.get_user
+    events:
+      - http:
+          path: get_user/{userId}
+          method: get
